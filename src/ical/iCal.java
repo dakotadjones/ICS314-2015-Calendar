@@ -58,7 +58,7 @@ public class iCal {
 		
 		//Create a content string which will be written to the file that uses format needed by ics files
 		String content =  "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nCLASS:PUBLIC\r\n"
-				        + "DTEND;TZID=\"Central Standard Time\"" + endDate + "T" + endTime + "\r\nDTSTART;TZID=\"Central Standard Time\""
+				        + "DTEND;TZID=Pacific/Honolulu" + ":" + endDate + "T" + endTime + "\r\nDTSTART;TZID=Pacific/Honolulu"
 				        + ":" + startDate + "T" + startTime + "\r\nSUMMARY;LANGUAGE=en-us:" + eventName + "\r\n"
 				        + "LOCATION:" + location + "\r\n" + "DESCRIPTION:" + description + "\r\n"
 				        + "END:VEVENT\r\nEND:VCALENDAR\r\n";
